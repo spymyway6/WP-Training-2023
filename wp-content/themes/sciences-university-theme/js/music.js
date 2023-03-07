@@ -20,6 +20,7 @@ $(document).ready(function(){
         audio.play();
         $('#play-btn-play').html('<i class="fa fa-pause"></i>');
         $('#play-btn-play').attr('onclick', "playSong(this, 'pause')");
+        $('#rhythm-animation').removeClass('d-none');
     }, "2000");
 });
 
@@ -28,10 +29,12 @@ function playSong(e, type) {
         audio.play();
         $(e).html('<i class="fa fa-pause"></i>');
         $(e).attr('onclick', "playSong(this, 'pause')");
+        $('#rhythm-animation').removeClass('d-none');
     }else{
         audio.pause();
         $(e).html('<i class="fa fa-play"></i>');
         $(e).attr('onclick', "playSong(this, 'play')");
+        $('#rhythm-animation').addClass('d-none');
     }
     $('#audio_duration').html(numToTime(audio.duration));
 }

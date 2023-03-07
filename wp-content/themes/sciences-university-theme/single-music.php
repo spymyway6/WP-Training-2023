@@ -99,7 +99,20 @@
             <div class="music-player-wrapper">
                 <!-- Left -->
                 <div class="music-content-artist">
-                    <div class="player-img" style="background-image: url(<?=$featured_img;?>)"></div>
+                    <div class="player-img" style="background-image: url(<?=$featured_img;?>)">
+                        <div class="rhythm-animation d-none" id="rhythm-animation">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="equilizer" viewBox="0 0 128 128">
+                                <g>
+                                    <title>Audio Equilizer</title>
+                                    <rect class="bar" transform="translate(0,0)" y="15"></rect>
+                                    <rect class="bar" transform="translate(25,0)" y="15"></rect>
+                                    <rect class="bar" transform="translate(50,0)" y="15"></rect>
+                                    <rect class="bar" transform="translate(75,0)" y="15"></rect>
+                                    <rect class="bar" transform="translate(100,0)" y="15"></rect>
+                                </g>
+                            </svg>
+                        </div>
+                    </div>
                     <div class="player-artist-cont">
                         <h5 class="player-music-title"><?=get_the_title(); ?></h5>
                         <p class="player-artist"><?=get_field('vocalist', $music_id); ?></p>

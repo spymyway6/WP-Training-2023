@@ -10,6 +10,7 @@ function university_files(){
     wp_enqueue_style('font-awesome-icons-css', 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css');
     wp_enqueue_style('our-main-styles', get_theme_file_uri('/build/style-index.css'));
     wp_enqueue_style('musics-styles', get_theme_file_uri('/build/musics-styles.css'));
+    wp_enqueue_style('rhythm-scss-styles', get_theme_file_uri('/build/rhythm.scss'));
 
     wp_enqueue_script('sweet-alert-jquery', 'https://code.jquery.com/jquery-3.6.3.min.js', NULL, '1.0', true);
     wp_enqueue_script('sweet-alert-js', get_theme_file_uri('/sweetalert/sweetalert.min.js'), array('jquery'), '1.0', true);
