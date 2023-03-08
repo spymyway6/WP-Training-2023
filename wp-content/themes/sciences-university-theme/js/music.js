@@ -21,6 +21,7 @@ $(document).ready(function(){
         $('#play-btn-play').html('<i class="fa fa-pause"></i>');
         $('#play-btn-play').attr('onclick', "playSong(this, 'pause')");
         $('#rhythm-animation').removeClass('d-none');
+        $('#audio_duration').html(numToTime(audio.duration));
     }, "2000");
 });
 

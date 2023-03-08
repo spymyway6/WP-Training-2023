@@ -387,6 +387,7 @@ section.single-music-section::after {
 .music-content-artist {
     display: flex;
     align-items: center;
+    justify-content: left;
 }
 .player-tools {
     width: 50%;
@@ -401,7 +402,7 @@ section.single-music-section::after {
 .music-player-volume {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: right;
 }
 .player-volume-option {
     height: 6px;
@@ -621,7 +622,7 @@ section.single-music-section::after {
     border-radius: 5px;
     cursor: pointer;
     margin: 10px 5px;
-    height: 4px;
+    height: 7px;
     width: 100%;
 }
 .progress {

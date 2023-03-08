@@ -1,15 +1,14 @@
-$max: 100px;
-
 .equilizer {
-  height: $max;
-  width: $max;
+  height: 100px;
+  width: 100px;
   transform: rotate(180deg);
 }
 
 .bar {
-  fill: #ec1542a8;
+  fill: #fff;
   width: 18px;
   animation: equalize 4s 0s infinite;
+  box-shadow: 0 0 20px #000000b8;
 }
 
 .bar:nth-child(1) { 
